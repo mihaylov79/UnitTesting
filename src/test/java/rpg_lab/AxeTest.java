@@ -16,5 +16,20 @@ public class AxeTest {
         Assertions.assertEquals(9,axe.getDurabilityPoints());
     }
 
+    @Test
+    public void brokenWeaponCantAttack() {
+        Axe axe = new Axe(10,1);
+        Dummy dummy = new Dummy(10,10);
+
+        Assertions.assertThrows(IllegalStateException.class, () -> {
+            axe.attack(dummy);
+            axe.attack(dummy);
+
+        });
+
+
+
+    }
+
 
 }
