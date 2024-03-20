@@ -32,4 +32,15 @@ public class AxeTest {
     }
 
 
+    @Test
+    void getAttackPoints() {
+    }
+
+    @Test
+    void getDurabilityPoints() {
+    }
+
+    @Test
+    void attack() {
+    }
 }
